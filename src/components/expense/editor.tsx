@@ -64,7 +64,7 @@ export default function ExpenseEditor({
           labelCol={{ span: 6 }}
           wrapperCol={{ span: 12 }}
         >
-          <DatePicker name="date" showTime disabled={update} />
+          <DatePicker name="date" showTime />
         </Form.Item>
         <Form.Item
           name="categoryId"

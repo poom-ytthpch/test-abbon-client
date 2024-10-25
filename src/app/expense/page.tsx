@@ -302,7 +302,7 @@ export default function ExpensePage() {
         },
       },
     });
-  }, [reportStartDate, reportEndDate]);
+  }, [reportStartDate, reportEndDate, data, updateData, removeData]);
 
   const handleUpdateExpense = async (
     val: Expense,
@@ -320,6 +320,7 @@ export default function ExpensePage() {
             amount: Number(val.amount),
             categoryId: val.categoryId,
             notes: val.notes,
+            date: val.date,
           },
         },
       });
@@ -332,6 +333,7 @@ export default function ExpensePage() {
             amount: Number(val.amount),
             categoryId: val.categoryId,
             notes: val?.notes,
+            date: val.date,
           },
         },
       });
