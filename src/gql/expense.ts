@@ -74,3 +74,14 @@ export const RemoveExpenseMutation = gql`
     }
   }
 `;
+
+export const ExpenseReportQuery = gql`
+  query ExpensesReport($input: ExpensesReportInput!) {
+    expensesReport(input: $input) {
+      amount
+      category
+      userName
+      date
+    }
+  }
+`;

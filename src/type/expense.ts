@@ -38,3 +38,10 @@ export type UpdateExpenseInput = {
   categoryId: string;
   notes: string;
 };
+
+export type ExpenseReport = {
+  amount: number;
+  category: string;
+  userName: string;
+  date: Date;
+};
